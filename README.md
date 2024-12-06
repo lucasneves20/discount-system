@@ -1,39 +1,55 @@
-# discount-system
+# Sistema de Descontos com QR Code
 
-This template should help get you started developing with Vue 3 in Vite.
+Este projeto é um sistema de descontos inovador que utiliza QR Codes para facilitar a interação entre lojistas e clientes. O mesmo QR Code pode ser utilizado tanto para visualizar os dados do cliente quanto para direcionar a uma página de cadastro de afiliados. O sistema está em fase de testes e conta com funcionalidades avançadas para gerenciar filtros, cadastro e histórico de uso dos descontos.
 
-## Recommended IDE Setup
+## 🛠 Funcionalidades Principais
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+- **QR Code Dinâmico:**
 
-## Type Support for `.vue` Imports in TS
+  - Redireciona para a página inicial onde o lojista pode acessar os dados do cliente.
+  - Permite o redirecionamento para uma página de cadastro como afiliado.
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+- **Sistema de Filtro e Busca:**
 
-## Customize configuration
+  - Filtros avançados por nome, e-mail, telefone, datas de criação e utilização de desconto.
+  - Suporte para busca dinâmica com múltiplos critérios.
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+- **Calendário Customizado:**
 
-## Project Setup
+  - Criado do zero com Vue.js e Tailwind CSS.
+  - Suporte a navegação por meses e seleção de datas.
 
-```sh
+- **Gerenciamento de Dados:**
+  - Histórico de descontos utilizados.
+  - Cadastro e edição de afiliados.
+
+## 📦 Instalação
+
+### Requisitos
+
+- **Node.js** (recomenda-se a versão mais recente).
+- **Gerenciador de Pacotes**: pnpm, npm, yarn ou bun.
+
+### Scripts de Instalação
+
+Escolha o seu gerenciador de pacotes preferido e siga os comandos abaixo:
+
+#### Usando pnpm:
+
+```bash
+# pnpm scripts (default by owner)
 pnpm install
-```
+pnpm run dev
 
-### Compile and Hot-Reload for Development
+# npm scripts
+npm install
+npm run dev
 
-```sh
-pnpm dev
-```
+# yarn scripts
+yarn install
+yarn dev
 
-### Type-Check, Compile and Minify for Production
-
-```sh
-pnpm build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-pnpm lint
+# bun scripts
+bun install
+bun run dev
 ```
